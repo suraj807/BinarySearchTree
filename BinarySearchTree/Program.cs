@@ -10,7 +10,14 @@ namespace BinarySearchTree
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" welcome");
+            Node<int> root = new Node<int>(56);
+            BinarySearchTree<int> bst = new BinarySearchTree<int>(root);
+            bst.Insert(30);
+            bst.Insert(70);
+            Console.WriteLine("Inorder Traversal of given binary tree is : ");
+            bst.InOrderTraversal(root);
+            bst.TreeSize();
+            Console.ReadLine();
         }
     }
 }
